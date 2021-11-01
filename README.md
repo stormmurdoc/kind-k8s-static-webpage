@@ -8,9 +8,9 @@ in the KinD-k8s cluster.
 
 The following components must be installed:
 
-- docker
-- kind
-- kubectl
+- [docker](https://www.docker.com/get-started)
+- [kind](https://kind.sigs.k8s.io)
+- [kubectl](https://kubernetes.io/de/docs/tasks/tools/install-kubectl)
 
 ## Deploy
 
