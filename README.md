@@ -20,6 +20,13 @@ Start the deployment with
 
         deploy.sh
 
+![image_2021-11-01-17-15-20](img/image_2021-11-01-17-15-20.png)
+
+After the deloyment you can test your website with the given IP adress & port.
+
+
+![image_2021-11-01-17-17-20](img/image_2021-11-01-17-17-20.png)
+
 ## Destroy cluster
 Getting rid of a KinD cluster
 
