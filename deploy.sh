@@ -19,7 +19,9 @@ kind load docker-image blog:0.1.0
 #kind delete cluster
 kubectl apply -f nginx-deployment.yaml
 kubectl apply -f nginx-service.yaml
-sleep 5
+
+echo "+++ waiting 15 seconds +++"
+sleep 15
 NODE_IP=$(kubectl get node -o wide|tail -1|awk {'print $6'})
 NODE_PORT=$(kubectl get svc "$SVC_NAME" -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
 echo "http://$NODE_IP:$NODE_PORT"
