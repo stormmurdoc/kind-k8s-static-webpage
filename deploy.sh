@@ -4,7 +4,7 @@ RESULT=$(kind get clusters)
 SVC_NAME=nginx-service
 
 if [ -z "$RESULT" ];then
-    echo "No kind cluster found! - starting..."
+    echo "Starting KinD cluster..."
     kind create cluster --config kind.yaml
 else
     echo "cluster '$RESULT' found!"
