@@ -24,3 +24,10 @@ Start the deployment with
 Getting rid of a KinD cluster
 
         kind delete cluster
+
+
+## kubectl
+
+        kubectl get all -A
+
+![image_2021-11-01-16-59-07,p](img/image_2021-11-01-16-59-07.png)
